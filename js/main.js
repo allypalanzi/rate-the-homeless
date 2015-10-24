@@ -23,7 +23,7 @@ function marker (info, lat, lng) {
 	var mark = new google.maps.Marker({map: map, position: new google.maps.LatLng(lat, lng)});
 	infowindow = new google.maps.InfoWindow({content:info});
 	google.maps.event.addListener(mark, "click", function(){
-		infowindow.open(map,mark);
+		window.location.href = "./homeless.html";
 	});
 
 	var contentString = /*'<div id="content">'+
@@ -57,10 +57,7 @@ function marker (info, lat, lng) {
 
     mark.setIcon('images/marker.png');
 
-  mark.addListener('click', function() {
-    infowindow.open(map, mark);
-
-  });
+ 
 
 	//infowindow.open(map,mark);
 
