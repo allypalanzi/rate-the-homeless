@@ -26,10 +26,10 @@ function marker (info, lat, lng) {
       '<p>Lorem ipsum dolor sit</p>' +
       '<p> amet, consectetur adipisicing </p>' +
       '<p> elit, sed do eiusmod tempor </p>' +
-      '<p>incididunt ut labore et dolore </p>' + 
+      '<p>incididunt ut labore et dolore </p>' +
       'magna aliqua. Ut enim ad minim</p>' +
       '<p> veniam, quis nostrud exercitation</p>'+
-      '<p> ullamco laboris nisi ut aliquip</p>' + 
+      '<p> ullamco laboris nisi ut aliquip</p>' +
       '<p> ex ea commodo consequat. </p>'+
       '<p> Duis aute irure dolor in</p>'+
       '<p> reprehenderit in voluptate </p>'+
@@ -45,12 +45,12 @@ function marker (info, lat, lng) {
     content: contentString
   	});
 
-    mark.setIcon('images/hobo.png');
+    mark.setIcon('images/marker.png');
 
   mark.addListener('click', function() {
     infowindow.open(map, mark);
 
-  });  
+  });
 
 	//infowindow.open(map,mark);
 
