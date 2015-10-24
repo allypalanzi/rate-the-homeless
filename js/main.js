@@ -72,9 +72,18 @@ function center_on_marker(m) {
 function init() {
 	init_map();
 	mark = marker("Walsh", 38.905971, -77.0432083);
+	mark = marker("Walsh", 38.905971, -77.0432083);
+	marker("Rupert", 38.91, -77.035);
 	marker("Rupert", 38.91, -77.035);
 	marker("Tasha", 38.9, -77.04);
-	marker("Kirk", 38.923, -77.052)
+	marker("Tasha", 38.9, -77.05);
+	marker("Kirk", 38.897510, -77.037705);
+	marker("Kirk", 38.923, -77.052);
+	marker("Kirk", 38.899247, -77.043155);
+	marker("Kirk", 38.920, -77.05123);
+	marker("Kirk", 38.889661, -77.016419);
+	marker("Kirk", 38.890396, -77.033714);
+	
 	center_on_marker(mark);
 }
 
