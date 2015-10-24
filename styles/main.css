@@ -140,6 +140,18 @@ p {
   width: 230px;
 }
 
+.background {
+  background-color: #C91167;
+}
+
+.background h1 {
+  text-transform: uppercase;
+  color:#fff;
+  font-weight: 300;
+  font-size: 150px;
+  margin-top: 20%;
+}
+
 .navigation {
   background-color: #C91167;
   padding: 15px;
