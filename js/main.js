@@ -23,7 +23,14 @@ function marker (info, lat, lng) {
 	var mark = new google.maps.Marker({map: map, position: new google.maps.LatLng(lat, lng)});
 	infowindow = new google.maps.InfoWindow({content:info});
 	google.maps.event.addListener(mark, "click", function(){
-		window.location.href = "./pedro.html";
+		var chosenValue = Math.random() < 0.5 ? true : false;
+		if (chosenValue) {
+			window.location.href = "./pedro.html";
+			window.location.replace("./pedro.html");
+		} else {
+			window.location.href = "./geneva.html";
+			window.location.replace("./geneva.html");
+		}
 	});
 
 	var contentString = /*'<div id="content">'+
