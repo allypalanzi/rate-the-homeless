@@ -45,14 +45,10 @@ function marker (info, lat, lng) {
     content: contentString
   	});
 
-    var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(38.905971, -77.0432083),
-    map: map,
-    title: 'Joe Whatever'
- 
-  });
-  marker.addListener('click', function() {
-    infowindow.open(map, marker);
+    mark.setIcon('images/hobo.png');
+
+  mark.addListener('click', function() {
+    infowindow.open(map, mark);
 
   });  
 
