@@ -16,7 +16,7 @@ function marker (info, lat, lng) {
 		infowindow.open(map,mark);
 	});
 
-	var contentString = '<div id="content">'+
+	var contentString = /*'<div id="content">'+
       '<div id="siteNotice">'+
       '</div>'+
       '<h1 id="firstHeading" class="firstHeading">Joe Whatever</h1>'+
@@ -39,7 +39,7 @@ function marker (info, lat, lng) {
       '<p>proident, sunt in culpa qui officia </p>' +
       '<p> deserunt mollit anim id est laborum.</p>' +
       '</div>'+
-      '</div>';
+      '</div>';*/ info;
 
       var infowindow = new google.maps.InfoWindow({
     content: contentString
