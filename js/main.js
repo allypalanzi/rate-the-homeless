@@ -21,7 +21,7 @@ function marker (info, lat, lng) {
       '</div>'+
       '<h1 id="firstHeading" class="firstHeading">Joe Whatever</h1>'+
       '<div id="bodyContent">'+
-      '<img src="images/hipster.jpg" height="120" width="120">' +
+      '<a href="profile.html" > <img src="images/hipster.jpg" height="120" width="120"></a>'  +
       '<p></p>'+
       '<p>Lorem ipsum dolor sit</p>' +
       '<p> amet, consectetur adipisicing </p>' +
