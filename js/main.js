@@ -21,15 +21,15 @@ function marker (info, lat, lng) {
       '</div>'+
       '<h1 id="firstHeading" class="firstHeading">Joe Whatever</h1>'+
       '<div id="bodyContent">'+
-      '<a href="homeless.html" > <img src="images/hipster.jpg" height="120" width="120"></a>'  +
+      '<a href="profile.html" > <img src="images/hipster.jpg" height="120" width="120"></a>'  +
       '<p></p>'+
       '<p>Lorem ipsum dolor sit</p>' +
       '<p> amet, consectetur adipisicing </p>' +
       '<p> elit, sed do eiusmod tempor </p>' +
-      '<p>incididunt ut labore et dolore </p>' +
+      '<p>incididunt ut labore et dolore </p>' + 
       'magna aliqua. Ut enim ad minim</p>' +
       '<p> veniam, quis nostrud exercitation</p>'+
-      '<p> ullamco laboris nisi ut aliquip</p>' +
+      '<p> ullamco laboris nisi ut aliquip</p>' + 
       '<p> ex ea commodo consequat. </p>'+
       '<p> Duis aute irure dolor in</p>'+
       '<p> reprehenderit in voluptate </p>'+
@@ -49,13 +49,14 @@ function marker (info, lat, lng) {
     position: new google.maps.LatLng(38.905971, -77.0432083),
     map: map,
     title: 'Joe Whatever'
-
+ 
   });
   marker.addListener('click', function() {
     infowindow.open(map, marker);
-  });
 
-	infowindow.open(map,mark);
+  });  
+
+	//infowindow.open(map,mark);
 
 	return mark;
 }
@@ -67,10 +68,7 @@ function center_on_marker(m) {
 
 function init() {
 	init_map();
-	mark = marker("Walsh", 38.905971, -77.0432083);
-	marker("Rupert", 38.91, -77.035);
-	marker("Tasha", 38.9, -77.04);
-	marker("Kirk", 38.923, -77.052)
+	var mark = marker("Homeless Joe", 38.905971, -77.0432083);
 	center_on_marker(mark);
 }
 
