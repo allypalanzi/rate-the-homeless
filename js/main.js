@@ -28,7 +28,7 @@ function center_on_marker(m) {
 
 function init() {
 	init_map();
-	var mark = marker("Homeless Joe",38.905971, -77.0432083);
+	var mark = marker("Homeless Joe", 38.905971, -77.0432083);
 	center_on_marker(mark);
 }
 
