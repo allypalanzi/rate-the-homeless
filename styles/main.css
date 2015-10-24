@@ -52,8 +52,22 @@ body {
   background: #fafafa;
   font-family: 'Roboto';
   height: 100%;
+  color: #3b3b3b;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+}
+p {
+  line-height: 1.2;
+  margin-bottom: 10px;
 }
 
+.credit {
+  margin-left: 20px;
+}
 .hero-unit {
   margin: 5px auto 0 auto;
   width: 230px;
@@ -84,22 +98,58 @@ button {
   font-size: 12px;
 }
 
+.map-page a {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  text-decoration: none;
+}
+
+.map-page svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.help a {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  text-decoration: none;
+}
+
+.profile-page img {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-page {
+  top: 15px;
+  right: 30px;
+  position: absolute;
+}
+
+
 .add {
   background-color: #C91167;
   border-radius: 50%;
   bottom: 10px;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 300;
   height: 50px;
-  position: absolute;
+  position: fixed;
   right: 10px;
   text-align: center;
   width: 50px;
 }
 .plus {
   position: absolute;
-  top: 42%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -110,25 +160,41 @@ button {
   width: 100%;
 }
 
+.label {
+  font-size: 10px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #C91167;
+  display: inline-block;
+}
+
 .profile {
-  max-width: 600px;
+  max-width: 300px;
   margin: 0 auto;
-  text-align: center;
   padding: 10px;
 }
 
 .images {
   margin: 20px 0;
+  text-align: center;
 }
 
 .name {
   font-size: 30px;
   font-weight: 600;
+  text-align: center;
+}
+
+.rating {
+  text-align: center;
 }
 
 .description {
-  margin: 20px 0;
+  margin: 5px 0 20px;
   line-height: 1.5;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 #map_container {
