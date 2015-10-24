@@ -58,7 +58,6 @@ body {
   width: 230px;
 }
 
-
 .navigation {
   background-color: #C91167;
   padding: 15px;
@@ -75,8 +74,25 @@ body {
 }
 
 .add {
-  border-radius: 50%;
   background-color: #C91167;
+  border-radius: 50%;
+  border: 0;
+  bottom: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 300;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+  width: 50px;
+}
+.plus {
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 500px) {
