@@ -153,6 +153,7 @@ p {
   font-weight: 300;
   text-align: center;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 .center {
@@ -216,6 +217,10 @@ button:hover {
   top: 18px;
   right: 45px;
   position: absolute;
+}
+
+.badge img {
+  width: 100px;
 }
 
 
