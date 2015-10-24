@@ -11,7 +11,7 @@ function init_map() {
 	    	featureType: "poi",
 	    	stylers: [
 	      		{ visibility: "off" }
-	    	]   
+	    	]
 	  	}
 	];
 
@@ -23,7 +23,7 @@ function marker (info, lat, lng) {
 	var mark = new google.maps.Marker({map: map, position: new google.maps.LatLng(lat, lng)});
 	infowindow = new google.maps.InfoWindow({content:info});
 	google.maps.event.addListener(mark, "click", function(){
-		window.location.href = "./homeless.html";
+		window.location.href = "./pedro.html";
 	});
 
 	var contentString = /*'<div id="content">'+
@@ -57,7 +57,7 @@ function marker (info, lat, lng) {
 
     mark.setIcon('images/marker.png');
 
- 
+
 
 	//infowindow.open(map,mark);
 

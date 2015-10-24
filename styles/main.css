@@ -69,11 +69,58 @@ body {
   height: 100%;
   color: #3b3b3b;
 }
-h1 {
+h1,
+h2,
+h4 {
   font-size: 50px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin: 25px 0;
   text-align: center;
+  text-transform: uppercase;
+}
+
+textarea {
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.modal {
+  background-color: #fff;
+  display: none;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: 90%;
+  z-index: 2;
+}
+body.active:before {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5,5,5,.8);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.modal.show {
+  display: block;
+}
+
+h2 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
 }
 p {
   line-height: 1.2;
@@ -117,6 +164,7 @@ button,
   cursor: pointer;
   font-size: 12px;
   margin: 10px;
+  display: inline-block;
 }
 
 button:hover {
@@ -139,12 +187,19 @@ button:hover {
 }
 
 .help a {
-  color: #fff;
+  color: #C91167;
   display: inline-block;
   position: absolute;
   right: 10px;
   top: 17px;
   text-decoration: none;
+  font-weight: 800;
+  background: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding-top: 3px;
 }
 
 .profile-page img {
@@ -153,8 +208,8 @@ button:hover {
 }
 
 .profile-page {
-  top: 15px;
-  right: 30px;
+  top: 18px;
+  right: 45px;
   position: absolute;
 }
 
