@@ -131,3 +131,18 @@ button {
   line-height: 1.5;
 }
 
+#map_container {
+  overflow:hidden;
+  height:100%;
+  width:100%;
+}
+
+#gmap_canvas {
+  height:100%;
+  width:100%;
+}
+
+#gmap_canvas img {
+  max-width:none!important;
+  background:none!important;
+}
