@@ -107,7 +107,8 @@ p {
   text-align: center;
 }
 
-button {
+button,
+.button {
   background-color: #C91167;
   border: 0;
   padding: 10px;
