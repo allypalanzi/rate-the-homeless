@@ -6,6 +6,16 @@ function init_map() {
 					 mapTypeId: google.maps.MapTypeId.ROADMAP,
 					 disableDefaultUI: true};
 	map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+	var noPoi = [
+		{
+	    	featureType: "poi",
+	    	stylers: [
+	      		{ visibility: "off" }
+	    	]   
+	  	}
+	];
+
+	map.setOptions({styles: noPoi});
 }
 
 
