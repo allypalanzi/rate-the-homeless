@@ -48,6 +48,21 @@ table {
   border-spacing: 0;
 }
 
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #fafafa;
   font-family: 'Roboto';
@@ -88,7 +103,12 @@ p {
   letter-spacing: 1px;
 }
 
-button {
+.center {
+  text-align: center;
+}
+
+button,
+.button {
   background-color: #C91167;
   border: 0;
   padding: 10px;
@@ -96,6 +116,7 @@ button {
   color: #fff;
   cursor: pointer;
   font-size: 12px;
+  margin: 10px;
 }
 
 button:hover {
@@ -163,9 +184,10 @@ button:hover {
   top: 55%;
 }
 
-.edit svg {
-  width: 20px;
-  height: 20px;
+.edit svg,
+.plus svg {
+  width: 30px;
+  height: 30px;
 }
 
 .map {
@@ -212,6 +234,25 @@ button:hover {
 
 li {
   margin-bottom: 5px;
+}
+
+.icon {
+  width: 46%;
+  float: left;
+  text-align: center;
+  margin: 2%;
+  line-height: 1.2;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon.active {
+  background: #C91167;
+  color: #fff;
+}
+
+.icon img {
+  width: 100%;
 }
 
 #map_container {
