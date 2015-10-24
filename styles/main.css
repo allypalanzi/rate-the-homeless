@@ -218,6 +218,10 @@ button:hover {
   position: absolute;
 }
 
+.badge img {
+  width: 100px;
+}
+
 
 .action-button {
   background-color: #C91167;
