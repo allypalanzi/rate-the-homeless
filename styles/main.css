@@ -153,6 +153,9 @@ p {
   font-weight: 300;
   text-align: center;
   letter-spacing: 1px;
+}
+
+a {
   text-decoration: none;
 }
 
