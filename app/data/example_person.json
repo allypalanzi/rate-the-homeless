@@ -1,8 +1,0 @@
-{
-    "name": "John Doe",
-    "description": "whatever",
-    "rating": 5,
-    "facts": ["fact 1", "fact 2", "fact 3"],
-    "attributes":["tall","old","smelly"],
-    "requests": ["netflix", "sandwich"]
-}
